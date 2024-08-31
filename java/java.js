@@ -24,12 +24,10 @@ function updateTime(event) {
   <div class="city">
         <div>
           <h2>${getCity}</h2>
-          <div class="date" id="date-paris">${cityTime.format(
-            "dddd, MMMM Do, yyyy"
-          )}</div>
+          <div class="date" >${cityTime.format("dddd, MMMM Do, yyyy")}</div>
         </div>
-        <div class="time" id="time-paris">${cityTime.format(
-          " H:mm:ss [<small>]A[</small]"
+        <div class="time" >${cityTime.format(
+          " HH:mm:ss [<small>]A[</small]"
         )}</div>
       </div>
 `;
