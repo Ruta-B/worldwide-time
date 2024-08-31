@@ -1,13 +1,15 @@
 function getTime() {
   let currentTimeZone = moment().tz("Europe/Paris");
+  let timeZoneRiga = moment().tz("Europe/Riga");
   let date = currentTimeZone.format("dddd, MMMM Do, yyyy");
   let time = currentTimeZone.format(" H:mm:ss [<small>]A[</small]");
+  let timeRiga = timeZoneRiga.format(" H:mm:ss [<small>]A[</small]");
   let dateParis = document.querySelector("#date-paris");
   let dateRiga = document.querySelector("#date-riga");
   let timeParis = document.querySelector("#time-paris");
-  let timeRiga = document.querySelector("#time-riga");
+  let timeInRiga = document.querySelector("#time-riga");
   timeParis.innerHTML = time;
-  timeRiga.innerHTML = time;
+  timeInRiga.innerHTML = timeRiga;
   dateParis.innerHTML = date;
   dateRiga.innerHTML = date;
 }
