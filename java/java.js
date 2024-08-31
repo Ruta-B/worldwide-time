@@ -25,18 +25,18 @@ function updateTime(event) {
   currentCity.innerHTML = `
   <div class="city">
         <div>
-          <h2>${getCity}</h2>
+          <h2>${getCity}</h2> <a href="index.html"
+        ><span class="material-symbols-outlined"> home </span></a
+      > 
           <div class="date" >${cityTime.format("dddd, MMMM Do, yyyy")}</div>
         </div>
         <div class="time" >${cityTime.format(
           " HH:mm:ss [<small>]A[</small]"
         )}</div> 
-      
+     
       </div>
      
-       <a href="index.html"
-        ><span class="material-symbols-outlined"> home </span></a
-      > 
+       
   
 `;
 }
