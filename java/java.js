@@ -14,6 +14,9 @@ function getTime() {
 
 function updateTime(event) {
   let chosenCity = event.target.value;
+  if (chosenCity === "current") {
+    chosenCity = moment.tz.guess();
+  }
   let getCity = chosenCity.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(chosenCity);
   let currentCity = document.querySelector("#chosen-city");
